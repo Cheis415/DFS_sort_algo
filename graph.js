@@ -1,4 +1,4 @@
-// Not necessary to create node class for this problem, but convention
+//Node class for storing input objects
 class Node {
   constructor(data = null) {
     this.data = data;
@@ -6,6 +6,7 @@ class Node {
 }
 
 class Graph {
+  //hash table for storing paren_id as keys and arrays containing child or children if more than one
   nodes = {};
   //array to store the root nodes
   start = [];
